@@ -11,7 +11,7 @@ import static com.google.common.truth.Truth.assertThat;
 
 public final class PageParserImplTest {
 
-  private static final String DATA_DIR = System.getProperty("testDataDir");
+  private static final String DATA_DIR = System.getProperty("testDataDir", "src/test/data");
   private final String testPage = Paths.get(DATA_DIR, "test-page.html").toUri().toString();
 
   @Test
